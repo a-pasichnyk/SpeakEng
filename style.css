@@ -1,0 +1,1415 @@
+/*Перевірити як лінкувати колір до класів, щоб швидко його замінити*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
+
+
+:root {
+    --bgColor: #262B31;
+    --bgColor2: #212428;
+    --whiteText: #D5D5D5; 
+    --yellowText: #F9C862; /*#F9C862*/
+    --redText: #E15A61;
+    --gray:#627281; /*#6C757D*/
+    --darkGray: #6559b4; /*#4f5357*/ 
+    --marginBetweenSections: 80px;
+    --marginBetweenSectionsMobile: 30px;
+    --dropShadow: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+* {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--whiteText);
+}
+
+
+html { scroll-behavior: smooth;}
+
+body{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    background-color: var(--bgColor);
+    
+    
+}
+
+
+h1{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.yellowText{
+    color: var(--yellowText);
+}
+
+.redText{
+    color: var(--redText);
+}
+
+.achivements{
+    margin-top: 5px;
+    padding: 0;
+}
+.checkbox-img{
+    width: 35px;
+    margin-right: 5px;
+    margin-bottom: -10px;
+    padding: 0;
+
+}
+
+/*--------------------------------------- BUTTONS ----------------------------------*/
+.subscribeImage{
+    height: 40px;
+}
+
+.mainButton{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    transition-duration: 0.5s;
+    background-color: var(--gray);
+    height: 75px;
+    width: 100%;
+    border-radius: 75px;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    filter: var(--dropShadow);  
+    border: none;
+}
+
+.mainButton:hover{
+    background-color: var(--darkGray);
+    
+    
+}
+
+.telegram{
+    height: 100%;
+}
+
+p{
+    font-size: 20px;
+}
+
+.text-Btn{
+    font-size: 18px;
+    padding-right: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.more-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: mw;
+}
+
+#feedback-btn{
+    display: inline;
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+    
+
+
+
+/*-------------------------------- DESKTOP MEDIA QUERY ----------------------------------*/
+/*-------------------------------- DESKTOP MEDIA QUERY ----------------------------------*/
+/*-------------------------------- DESKTOP MEDIA QUERY ----------------------------------*/
+/*-------------------------------- DESKTOP MEDIA QUERY ----------------------------------*/
+
+
+
+@media (min-width: 1036px) {
+
+
+
+
+
+
+/*------------------------------- NAVBAR + HEADER -------------------------------*/
+
+nav{
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding: 0 120px 0 120px;
+    background-color: var(--bgColor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    filter: var(--dropShadow);
+}
+
+.navcontainer{
+    
+    width: 100%;    
+    height: 100%;
+    max-width: 900px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbaritem{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.navbaritem-li{
+    font-size: 18px;
+    display: inline;    
+}
+
+.navhover{
+    transition-duration: 0.5s;
+    color: var(--whiteText);
+}
+
+.navhover:hover{
+color: var(--yellowText);
+}
+
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    
+}
+
+
+
+header{
+
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 320px;
+    
+    background-color: var(--bgColor2);
+    border-radius: 70px;
+    
+    padding: 50px;
+    margin-top: var(--marginBetweenSections);
+
+    filter:var(--dropShadow);
+}
+
+
+
+.teacher{
+    height: 100%;    
+    border-radius: 100%;
+    filter: var(--dropShadow);
+}
+
+.flexcolumn{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    max-width: 450px;
+    padding: 0;
+}
+
+/*-------------------------------- PRACTICE MAKES PERFECT SECTION ----------------------*/
+
+.container-2{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-top: var(--marginBetweenSections);
+    margin-bottom: var(--marginBetweenSections);
+}
+
+.item-1{
+    margin-right: 20px;
+    padding: 0;
+}
+
+
+
+.item-2{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+.reducespace {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+/*------------------------------ PRICING SECTION -----------------------------*/
+
+.container-3{
+    
+    text-align: center;
+}
+
+.priceContainer{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.priceBackground{
+    
+    background-color: var(--gray);
+    border-radius: 50px;
+    filter: var(--dropShadow);
+    display: flex;
+    flex-direction: column;    
+    align-items: center;    
+}
+
+
+.priceHeader{
+    margin: 5px;
+    font-size: 20px;
+}
+
+.starIcon{
+    width: 30px;
+    margin: 10px;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.priceBulletList{
+    text-align: left;
+   
+    padding-right: 10px;
+    
+}
+
+.yellowBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellowText);
+    border-radius: 50px;
+    
+    padding: 0 10px 0 10px;
+    width: 60%;
+    
+}
+
+.grayText{
+    color: var(--gray);
+}
+
+
+
+/*----------------------------- FAQ --------------------------------*/
+
+.container-4{
+   
+    width: 100%;
+    text-align: center;
+    
+    margin: var(--marginBetweenSections);
+}
+
+.containerFAQ{
+    width: 100%;
+    padding: 0;
+    
+    
+}
+
+.listItemFAQ{
+
+width: 97%;
+text-align: left;
+font-size: 18px;
+margin: 25px;
+}
+
+
+/*---------------------------------- COMMENTS SECTION -----------------------------*/
+
+.container-5{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.comments-sliding{
+      
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: mw;
+    height: fit-content;
+}
+
+.comm-bg{
+   
+    padding:5px 10px 5px 10px;
+    background-color: var(--gray);
+    border-radius: 50px 50px 50px 50px;
+    width: mw;    
+    filter: var(--dropShadow);
+}
+
+
+
+
+.comm-low-bg{
+    z-index: 1;
+    margin-left: 50px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid var(--gray);
+    
+}
+
+.comm-data{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.comm-img{
+
+    width: 100px;
+    border-radius: 100%;
+    
+}
+
+
+
+.comm-name{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.emptyCommentArea{
+    
+    display: none;
+    
+}
+
+.filledCommentArea{
+    
+    display: contents;
+    transition-duration: 1s;
+    margin-top: 20px;
+    padding-top: 20px;
+    transition-duration: 0.5s;
+}
+/*---------------------------------------------------------------------------------*/
+
+
+/*---------------------------------- FOOTER ---------------------------------------*/
+
+footer{
+    
+    text-align: center;
+    margin-top: var(--marginBetweenSections);
+}
+
+.upperFooter{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr; 
+    padding: 0;
+       
+
+}
+
+.text-footer{
+    margin-right: 15px;
+}
+
+.midFooter{
+    
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.lastFooter{
+    
+    margin: 20px;
+}
+
+
+
+
+/*-------------------------------- BG IMAGE ------------------------------------*/
+
+.bgImage{
+    z-index: -1;
+    opacity: 50%;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+}
+
+}
+
+
+
+/*----------------------------------- LANDSCAPE TABLET 1024px wide -----------------------------------------*/
+/*----------------------------------- LANDSCAPE TABLET 1024px wide -----------------------------------------*/
+/*----------------------------------- LANDSCAPE TABLET 1024px wide -----------------------------------------*/
+/*----------------------------------- LANDSCAPE TABLET 1024px wide -----------------------------------------*/
+/*----------------------------------- LANDSCAPE TABLET 1024px wide -----------------------------------------*/
+/*----------------------------------- LANDSCAPE TABLET 1024px wide -----------------------------------------*/
+
+@media (max-width: 1035px) {
+
+
+.bgImage{
+display: none;
+}
+
+.bannerInfo{
+    font-size: 18px;
+}
+
+h1{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size: 16px;
+
+}
+
+p{
+    font-size: 16px;
+}
+
+
+/*------------------------------- NAVBAR -------------------------------*/
+
+nav{
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding: 0 30px 0 30px;
+    background-color: var(--bgColor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    filter: var(--dropShadow); 
+}
+
+.navcontainer{
+    
+    width: 100%;    
+    height: 100%;
+    max-width: 700px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbaritem{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.navbaritem-li{
+    font-size: 18px;
+    display: inline;    
+}
+
+.navhover{
+    transition-duration: 0.5s;
+    color: var(--whiteText);
+}
+
+.navhover:hover{
+color: var(--yellowText);
+}
+
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    
+    
+}
+
+
+
+header{
+
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    
+    background-color: var(--bgColor2);
+    border-radius: 70px;
+    
+    padding: 50px;
+    margin-top: var(--marginBetweenSections);
+
+    filter:var(--dropShadow);
+}
+
+
+
+.teacher{
+    height: 100%;    
+    border-radius: 100%;
+    filter: var(--dropShadow);
+}
+
+.flexcolumn{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    max-width: 350px;
+    padding: 0;
+    padding-right: 15px;
+}
+
+
+
+.container-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: var(--marginBetweenSections);
+    margin-bottom: var(--marginBetweenSections);
+}
+
+.item-1{
+    margin-right: 20px;
+    padding: 0;
+}
+
+
+
+.item-2{
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+
+
+.reducespace {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+/*------------------------------ PRICING SECTION -----------------------------*/
+
+.container-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.priceContainer{
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.priceBackground{
+    
+    background-color: var(--gray);
+    border-radius: 50px;
+    filter: var(--dropShadow);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;   
+    align-items: center;
+    height: fit-content;
+    padding-top: 10px;    
+}
+
+
+.priceHeader{
+    margin:0;
+    padding: 0;
+}
+
+.starIcon{
+    visibility: hidden;
+    display: none;
+    width: 10px;
+    
+}
+
+
+
+.priceBulletList{
+    text-align: left;
+   font-size: 14px;
+    padding-right: 10px;
+    
+}
+
+.yellowBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellowText);
+    border-radius: 50px;
+    
+    padding: 0 10px 0 10px;
+    width: 60%;
+    
+}
+
+.grayText{
+    color: var(--gray);
+}
+
+/*----------------------------- FAQ --------------------------------*/
+
+.container-4{
+   
+    width: 100%;
+    text-align: center;
+    
+    margin: var(--marginBetweenSections);
+}
+
+.containerFAQ{
+    width: 100%;
+    padding: 0;
+    
+    
+}
+
+.listItemFAQ{
+
+width: 97%;
+text-align: left;
+font-size: 16px;
+margin: 25px;
+}
+
+/*---------------------------------- COMMENTS SECTION -----------------------------*/
+
+.container-5{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.comments-sliding{
+      
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: mw;
+    height: fit-content;
+}
+
+.comm-bg{
+   
+    padding:0 15px 0 15px;
+    background-color: var(--gray);
+    border-radius: 50px 50px 50px 50px;
+    width: mw;
+    filter: var(--dropShadow);    
+}
+
+
+
+
+.comm-low-bg{
+    z-index: 1;
+    margin-left: 50px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid var(--gray);
+    
+}
+
+.comm-data{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.comm-img{
+
+    width: 100px;
+    border-radius: 100%;
+    
+}
+
+
+
+.comm-name{
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.emptyCommentArea{
+    
+    display: none;
+    
+}
+
+.filledCommentArea{
+    
+    display: contents;
+    transition-duration: 1s;
+    margin-top: 20px;
+    padding-top: 20px;
+    transition-duration: 0.5s;
+}
+
+#feedback-btn{
+    display: inline;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+/*---------------------------------- FOOTER ---------------------------------------*/
+
+footer{
+    
+    text-align: center;
+    margin-top: var(--marginBetweenSections);
+}
+
+.upperFooter{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr; 
+    padding: 0;
+       
+
+}
+
+.text-footer{
+    margin-right: 15px;
+    text-align: left;
+}
+
+.midFooter{
+    
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.lastFooter{
+    
+    margin: 20px;
+}
+
+
+}
+
+
+
+
+/*----------------------------------- TABLET-PHONE 700px wide -----------------------------------------*/
+/*----------------------------------- TABLET-PHONE 700px wide -----------------------------------------*/
+/*----------------------------------- TABLET-PHONE 700px wide -----------------------------------------*/
+/*----------------------------------- TABLET-PHONE 700px wide -----------------------------------------*/
+/*----------------------------------- TABLET-PHONE 700px wide -----------------------------------------*/
+/*----------------------------------- TABLET-PHONE 700px wide -----------------------------------------*/
+/*----------------------------------- TABLET-PHONE 700px wide -----------------------------------------*/
+
+
+@media (max-width: 700px){
+
+.bgImage{
+display: none;
+}
+
+.bannerInfo{
+    font-size: 14px;
+}
+
+h1{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+h4{
+    font-size: 14px;
+
+}
+
+p{
+    font-size: 14px;
+}
+
+/*------------------------------- NAVBAR -------------------------------*/
+
+main{
+    
+    display:flex;
+    flex-direction: column;    
+    width: 80%;
+    
+        
+}
+
+nav{
+    
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    padding: 10px 40px 10px 40px;
+    margin: 0;
+    background-color: var(--bgColor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    filter: var(--dropShadow);
+}
+
+.navcontainer{
+    
+    width: 100%;    
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgNav{
+    height: 100%;
+}
+
+#homeIcon{
+    height: 100%;
+    margin:0;
+    padding: 0;
+    width: fit-content;
+}
+
+#burgerIcon{
+    height: 100%;
+    margin:0;
+    padding: 0;
+    width: fit-content;
+    z-index: 1;
+    
+}
+
+
+/* EVENT FOR DROPDOWN */
+
+.navbaritem{
+    display: none;
+}
+
+.navbaritemMobile{
+   
+    z-index: 1;
+    position: absolute;
+    border: solid 1px var(--whiteText);
+    border-radius: 30px;
+    top: 50px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 80px;
+    background-color: var(--bgColor2);
+    opacity: 0.9;
+}
+
+
+.navhover{
+    transition-duration: 0.5s;
+    color: var(--whiteText);
+}
+
+.navhover:hover{
+color: var(--yellowText);
+}
+
+
+
+
+
+/*------------------------- NEW NAVBAR -------------------------------*/
+
+
+
+/*------------------------------------ HEADER -----------------------------------*/
+
+
+
+header{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+    padding: 40px;
+
+    width: auto;
+    max-width: 350px;
+    height: fit-content;
+    
+    
+    background-color: var(--bgColor2);
+    border-radius: 70px;
+        
+}
+
+
+
+.teacher{
+    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 100%;
+    
+
+    filter: var(--dropShadow);
+}
+
+.flexcolumn{
+    
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 100%;
+    max-width: 260px;
+    height: 100%;
+ 
+    /*
+    margin-left:20px;
+    padding-right: 15px;
+    */
+   
+
+}
+
+
+
+
+
+
+/*-------------------------------- PRACTICE MAKES PERFECT SECTION ----------------------*/
+
+.container-2{
+
+   
+    width: 100%;
+    padding: 0;
+    margin-top: var(--marginBetweenSections);
+    margin-bottom: var(--marginBetweenSections);
+}
+
+.item-1{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+
+
+/*------------------------------ PRICING SECTION -----------------------------*/
+
+.container-3{
+    
+    text-align: center;
+}
+
+.priceContainer{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.item-2{
+    margin-top: 15px;
+}
+
+
+
+
+
+/*----------------------------- FAQ --------------------------------*/
+
+.container-4{
+   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    margin: var(--marginBetweenSections);
+}
+
+.containerFAQ{
+    
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+.listItemFAQ{
+
+width: 100%;
+text-align: left;
+font-size: 14px;
+margin: 0 0 15px 0;
+
+
+}
+
+
+/*-------------------------------------- COMMENTS ---------------------------------------*/
+
+
+.container-5{
+    text-align: center;
+    width: 100%;
+    
+}
+
+
+.comments-sliding{
+      
+    display: flex;
+    flex-direction: column;    
+    
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: mw;
+    height: fit-content;
+}
+
+.comm-bg{
+   filter: var(--dropShadow);
+   padding:0 15px 0 15px;
+    background-color: var(--gray);
+    border-radius: 50px 50px 50px 50px;
+    width: mw;
+    
+}
+
+
+
+
+.comm-low-bg{
+    z-index: 1;
+    margin-left: 50px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid var(--gray);
+    
+}
+
+.comm-data{
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.comm-img{
+
+    width: 100px;
+    border-radius: 100%;
+    
+}
+
+
+
+.comm-name{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.emptyCommentArea{
+    
+    display: none;
+    
+}
+
+.filledCommentArea{
+    
+    display: contents;
+    transition-duration: 1s;
+    margin-top: 20px;
+    padding-top: 20px;
+    transition-duration: 0.5s;
+}
+
+#feedback-btn{
+    display: inline;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.comm-txt{
+    font-size: 14px;
+}
+
+/*---------------------------------- FOOTER ---------------------------------------*/
+
+footer{
+    
+    width: 100%;
+    margin-top: var(--marginBetweenSections);
+}
+
+.upperFooter{
+        
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-footer{
+    
+    padding: 0;
+    margin: 0 0 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.midFooter{
+    
+    margin-top: 35px;
+    padding: 10px;
+}
+
+.lastFooter{
+    
+    margin: 20px;
+}
+
+
+
+/*--------------------------------------- BUTTONS ----------------------------------*/
+.subscribeImage{
+    height: 40px;
+}
+
+.mainButton{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    transition-duration: 0.5s;
+    background-color: var(--gray);
+    height: 55px;
+    width: 100%;
+    border-radius: 75px;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    filter: var(--dropShadow);  
+    border: none;
+}
+
+.mainButton:hover{
+    background-color: var(--darkGray);
+    
+    
+}
+
+.telegram{
+    height: 100%;
+}
+
+.text-Btn{
+    font-size: 14px;
+    padding-right: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.more-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: mw;
+}
+
+#feedback-btn{
+    display: inline;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+
+}
+

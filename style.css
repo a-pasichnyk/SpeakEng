@@ -142,6 +142,41 @@ p{
     margin-bottom: 30px;
 }
 
+#oferta-btn{
+    margin: 50px;
+}
+
+.containerPolicy{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 50px;
+}
+
+.policyItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: solid 1px var(--whiteText);
+    
+
+}
+
+
+.ofertaTitleItem{
+    text-align: center;
+}
+
+.datePublished{
+    text-align: left;
+    padding-top:50px;
+}
+
+
+
 
 
 
@@ -569,6 +604,10 @@ p{
     font-size: 16px;
 }
 
+.ofertaP{
+    font-size: 12px;
+}
+
 
 /*------------------------------- NAVBAR -------------------------------*/
 
@@ -928,6 +967,9 @@ footer{
     margin: 20px;
 }
 
+
+.containerPolicy{
+}
 
 }
 
@@ -1408,7 +1450,9 @@ footer{
     display: inline;
     width: 60%;
     margin-bottom: 30px;
+    color: var(--whiteText);
 }
+
 
 
 }

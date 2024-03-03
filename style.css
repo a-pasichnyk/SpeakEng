@@ -1,6 +1,71 @@
 /*Перевірити як лінкувати колір до класів, щоб швидко його замінити*/
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
 
+/*COOKIES STYLING*/
+
+.cookie-msg-container{
+    
+    display: flexbox;
+    margin: 10px;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.cookie-msg{
+    text-align: center;
+
+}
+
+.cookie-banner {
+    
+    z-index: 2;
+    position: fixed;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 98,5vw;
+    background-color: var(--bgColor2);
+    padding: 0;
+    margin-right: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   
+    text-align: center;
+}
+
+.cookie-banner p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.cookie-banner a {
+    color: var(--yellowText);
+}
+
+#acceptBtn {
+    background-color: var(--gray);
+    border: none;
+    border-radius: 20px;
+    color: var(--whiteText);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom:15px;
+    cursor: pointer;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*-----------------------*/
 
 
 :root {
@@ -26,20 +91,16 @@ html { scroll-behavior: smooth;}
 
 body{
     
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    min-height: 100vh;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    width: 100%;
     background-color: var(--bgColor);
-    
-    
-    
+
 }
 
 
@@ -148,6 +209,8 @@ p{
 
 #oferta-btn{
     margin: 50px;
+    width:auto;
+
 }
 
 .containerPolicy{
@@ -1412,11 +1475,15 @@ footer{
     height: 40px;
 }
 
+
+
 .mainButton{
     
     display:flex;
     justify-content: center;
     align-items: center;
+
+   
 
 
 
@@ -1429,6 +1496,7 @@ footer{
     padding: 10px 20px 10px 20px;
     filter: var(--dropShadow);  
     border: none;
+    
 }
 
 .mainButton:hover{
@@ -1465,4 +1533,3 @@ footer{
 
 
 }
-

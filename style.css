@@ -147,20 +147,21 @@ p{
 }
 
 .containerPolicy{
-    display: flex;
-    justify-content: space-between;
-    
-    margin-bottom: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
 .policyItem{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
-    border: solid 1px var(--whiteText);
+    width: 100%;
+    font-size: 12px;
+    
     
 
 }

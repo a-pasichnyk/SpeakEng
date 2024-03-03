@@ -165,15 +165,23 @@ p{
 
 }
 
+.containerOfertaTitle{
+    
+    width: 100%;
+}
+
 
 .ofertaTitleItem{
     text-align: center;
+    
 }
 
 .datePublished{
     text-align: left;
     padding-top:50px;
+    
 }
+
 
 
 
@@ -606,6 +614,7 @@ p{
 
 .ofertaP{
     font-size: 12px;
+    
 }
 
 
@@ -967,11 +976,6 @@ footer{
     margin: 20px;
 }
 
-
-.containerPolicy{
-}
-
-}
 
 
 

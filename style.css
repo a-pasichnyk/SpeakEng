@@ -31,9 +31,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
     margin: 0;
+    padding: 0;
     background-color: var(--bgColor);
+    
     
     
 }
@@ -151,7 +155,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 0;
 }
 
 .policyItem{

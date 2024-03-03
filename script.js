@@ -83,6 +83,50 @@ function getCookie(cookieName) {
     return "";
 }
 
+
+
+function setCookie(cookieName, cookieValue, expirationDays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
+}
+
+// Function to get a cookie value
+function getCookie(cookieName) {
+    var name = cookieName + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var cookieArray = decodedCookie.split(';');
+    for (var i = 0; i < cookieArray.length; i++) {
+        var cookie = cookieArray[i];
+        while (cookie.charAt(0) == ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(name) == 0) {
+            return cookie.substring(name.length, cookie.length);
+        }
+    }
+    return "";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var acceptBtn = document.getElementById("acceptBtn");
+    var cookieBanner = document.getElementById("cookieBanner");
+
+    acceptBtn.addEventListener("click", function() {
+        cookieBanner.style.display = "none";
+        setCookie("cookie_consent", "accepted", 365); // Cookie accepted for 1 year
+    });
+
+    // Check if cookie consent is given
+    var cookieConsent = getCookie("cookie_consent");
+    if (cookieConsent !== "accepted") {
+        cookieBanner.style.display = "block"; // Show the consent banner if not accepted
+    }
+});
+
+
+/* RUBISH
 // Function to check if cookie consent is already given
 function checkCookieConsent() {
     var cookieConsent = getCookie("cookie_consent");
@@ -107,7 +151,7 @@ if (!checkCookieConsent()) {
     handleCookieConsent();
 }
 
-//SECOND PART COOKIES
+//SECOND PART. COOKIES
 
 document.addEventListener("DOMContentLoaded", function() {
     var acceptBtn = document.getElementById("acceptBtn");
@@ -119,6 +163,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.cookie = "cookie_consent=accepted; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
     });
 });
-
+*/
 
 

@@ -1211,11 +1211,11 @@ header{
 
 .teacher{
     margin-bottom: 40px;
-    width: 100%;
+    width: 320px;
     border-radius: 100%;
-    height: auto;
+    height: 320px;
     filter: var(--dropShadow);
-    object-fit: cover;
+    
 }
 
 .flexcolumn{

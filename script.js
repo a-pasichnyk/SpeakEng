@@ -57,6 +57,8 @@ function adjustingNavbar () {
 }
 window.addEventListener('resize', adjustingNavbar);
 
+
+
 //COOKIES
 
 document.addEventListener("DOMContentLoaded", function() {

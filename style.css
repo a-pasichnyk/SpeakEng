@@ -1213,9 +1213,6 @@ header{
     margin-bottom: 40px;
     width: 100%;
     border-radius: 100%;
-    height: fit-content;
-    
-
     filter: var(--dropShadow);
 }
 

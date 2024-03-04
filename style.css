@@ -1199,7 +1199,7 @@ header{
     padding: 40px;
     width: auto;
     max-width: 350px;
-    height: 500px;
+    height: auto;
     
     
     background-color: var(--bgColor2);

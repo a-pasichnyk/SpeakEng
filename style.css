@@ -1198,8 +1198,8 @@ header{
     margin: 30px 0 30px 0;
     padding: 40px;
     width: auto;
-    max-width: 350px;
-    height: auto;
+    max-width: 380px;
+    height: fit-content;
     
     
     background-color: var(--bgColor2);
@@ -1213,6 +1213,7 @@ header{
     margin-bottom: 40px;
     width: 100%;
     border-radius: 100%;
+    height: fit-content;
     
 
     filter: var(--dropShadow);
@@ -1516,6 +1517,8 @@ footer{
     margin-bottom: 30px;
     color: var(--whiteText);
 }
+
+/*----------------------------*/
 
 
 

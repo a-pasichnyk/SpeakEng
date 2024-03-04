@@ -1211,9 +1211,9 @@ header{
 
 .teacher{
     margin-bottom: 40px;
-    width: 320px;
+    width: 100%;
     border-radius: 100%;
-    height: 320px;
+    height: 100%;
     filter: var(--dropShadow);
     
 }

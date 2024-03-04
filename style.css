@@ -3,66 +3,50 @@
 
 /*COOKIES STYLING*/
 
-.cookie-msg-container{
-    
-    display: flexbox;
-    margin: 10px;
-    justify-content: stretch;
-    align-items: stretch;
-}
-.cookie-msg{
-    text-align: center;
-
-}
-
-.cookie-banner {
-    
-    z-index: 2;
+.popup-container {
+    display: none;
     position: fixed;
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
+    top: 0;
     left: 0;
-    width: 98,5vw;
-    background-color: var(--bgColor2);
-    padding: 0;
-    margin-right: 0px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-   
-    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
 }
 
-.cookie-banner p {
-    text-align: center;
-    margin: 0;
-    padding: 0;
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.cookie-banner a {
-    color: var(--yellowText);
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
-#acceptBtn {
-    background-color: var(--gray);
-    border: none;
-    border-radius: 20px;
-    color: var(--whiteText);
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom:15px;
+.btn {
+    padding: 10px 20px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
 }
 
-.btn-container{
-    display: flex;
-    justify-content: center;
+.accept-btn {
+    background-color: #4CAF50;
+    color: #fff;
 }
 
+.deny-btn {
+    background-color: #f44336;
+    color: #fff;
+}
 
 
 /*-----------------------*/

@@ -59,110 +59,58 @@ window.addEventListener('resize', adjustingNavbar);
 
 //COOKIES
 
-function setCookie(cookieName, cookieValue, expirationDays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toUTCString();
-    document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
-}
-
-// Function to get cookie value
-function getCookie(cookieName) {
-    var name = cookieName + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var cookieArray = decodedCookie.split(';');
-    for (var i = 0; i < cookieArray.length; i++) {
-        var cookie = cookieArray[i];
-        while (cookie.charAt(0) == ' ') {
-            cookie = cookie.substring(1);
-        }
-        if (cookie.indexOf(name) == 0) {
-            return cookie.substring(name.length, cookie.length);
-        }
-    }
-    return "";
-}
-
-
-
-function setCookie(cookieName, cookieValue, expirationDays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toUTCString();
-    document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
-}
-
-// Function to get a cookie value
-function getCookie(cookieName) {
-    var name = cookieName + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var cookieArray = decodedCookie.split(';');
-    for (var i = 0; i < cookieArray.length; i++) {
-        var cookie = cookieArray[i];
-        while (cookie.charAt(0) == ' ') {
-            cookie = cookie.substring(1);
-        }
-        if (cookie.indexOf(name) == 0) {
-            return cookie.substring(name.length, cookie.length);
-        }
-    }
-    return "";
-}
-
 document.addEventListener("DOMContentLoaded", function() {
-    var acceptBtn = document.getElementById("acceptBtn");
-    var cookieBanner = document.getElementById("cookieBanner");
+    const popupContainer = document.getElementById('popup-container');
+    const acceptBtn = document.getElementById('accept-cookies');
+    const denyBtn = document.getElementById('deny-cookies');
 
-    acceptBtn.addEventListener("click", function() {
-        cookieBanner.style.display = "none";
-        setCookie("cookie_consent", "accepted", 365); // Cookie accepted for 1 year
+    const showPopup = () => {
+        popupContainer.style.display = 'block';
+    };
+
+    const hidePopup = () => {
+        popupContainer.style.display = 'none';
+    };
+
+    const setCookie = (name, value, days) => {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 7 * 24 * 60 * 60 * 1000)); // Cookie expires after 7 days
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    };
+
+    const getCookie = (name) => {
+        const cookieName = name + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const cookieArray = decodedCookie.split(';');
+        for (let i = 0; i < cookieArray.length; i++) {
+            let cookie = cookieArray[i];
+            while (cookie.charAt(0) == ' ') {
+                cookie = cookie.substring(1);
+            }
+            if (cookie.indexOf(cookieName) == 0) {
+                return cookie.substring(cookieName.length, cookie.length);
+            }
+        }
+        return "";
+    };
+
+    const checkCookie = () => {
+        const cookieAccepted = getCookie('cookiesAccepted');
+        if (cookieAccepted === '') {
+            showPopup();
+        }
+    };
+
+    acceptBtn.addEventListener('click', () => {
+        setCookie('cookiesAccepted', 'true', 7); // Set cookie for 7 days
+        hidePopup();
     });
 
-    // Check if cookie consent is given
-    var cookieConsent = getCookie("cookie_consent");
-    if (cookieConsent !== "accepted") {
-        cookieBanner.style.display = "block"; // Show the consent banner if not accepted
-    }
+    denyBtn.addEventListener('click', () => {
+        hidePopup();
+        // You may choose to handle denying cookies in your application
+    });
+
+    checkCookie();
 });
-
-
-/* RUBISH
-// Function to check if cookie consent is already given
-function checkCookieConsent() {
-    var cookieConsent = getCookie("cookie_consent");
-    if (cookieConsent !== "") {
-        return true;
-    }
-    return false;
-}
-
-// Function to handle cookie consent
-function handleCookieConsent() {
-    var consentButton = document.getElementById("accept-cookies");
-    consentButton.addEventListener("click", function() {
-        setCookie("cookie_consent", "accepted", 365); // Cookie accepted for 1 year
-        document.getElementById("cookie-consent").style.display = "none"; // Hide the consent banner
-    });
-}
-
-// Check if cookie consent is given, if not, show the consent banner
-if (!checkCookieConsent()) {
-    document.getElementById("cookie-consent").style.display = "block";
-    handleCookieConsent();
-}
-
-//SECOND PART. COOKIES
-
-document.addEventListener("DOMContentLoaded", function() {
-    var acceptBtn = document.getElementById("acceptBtn");
-    var cookieBanner = document.getElementById("cookieBanner");
-
-    acceptBtn.addEventListener("click", function() {
-        cookieBanner.style.display = "none";
-        // Set a cookie to remember user's choice
-        document.cookie = "cookie_consent=accepted; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
-    });
-});
-*/
-
-

@@ -29,6 +29,10 @@
 .btn-container {
     text-align: center;
     margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .btn {
@@ -63,6 +67,7 @@
     --redText: #E15A61;
     --gray:#627281; /*#6C757D*/
     --darkGray: #6559b4; /*#4f5357*/ 
+    --emphPrice: #da8300;
     --marginBetweenSections: 80px;
     --marginBetweenSectionsMobile: 30px;
     --dropShadow: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
@@ -146,9 +151,6 @@ a {
     display:flex;
     justify-content: center;
     align-items: center;
-
-
-
     transition-duration: 0.5s;
     background-color: var(--gray);
     height: 75px;
@@ -158,12 +160,16 @@ a {
     padding: 10px 20px 10px 20px;
     filter: var(--dropShadow);  
     border: none;
+    
 }
 
 .mainButton:hover{
     background-color: var(--darkGray);
     
-    
+}
+
+.mainButton, .mainButton:hover {
+    cursor: pointer; 
 }
 
 .telegram{
@@ -215,10 +221,21 @@ p{
     border-radius: 10px;
     width: 100%;
     font-size: 12px;
-    
-    
+    transition-duration: 0.5s;
 
 }
+.policyItem:hover{
+    color: var(--yellowText);
+}
+
+.speakeng{
+    transition-duration: 0.5s;
+}
+
+.speakeng:hover{
+    color: var(--yellowText);
+}
+
 
 .containerOfertaTitle{
     
@@ -414,6 +431,17 @@ header{
     display: flex;
     flex-direction: column;    
     align-items: center;    
+    padding: 0 0 10px 0;
+}
+
+#emphPrize{
+    background-color: var(--gray);
+    border-radius: 50px;
+    filter: var(--dropShadow);
+    
+    display: flex;
+    flex-direction: column;    
+    align-items: center;   
 }
 
 
@@ -424,7 +452,7 @@ header{
 
 .starIcon{
     width: 30px;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .invisible{
@@ -433,18 +461,19 @@ header{
 
 .priceBulletList{
     text-align: left;
-   
     padding-right: 10px;
     
 }
 
 .yellowBox{
+    position: absolute;
+    bottom: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--yellowText);
     border-radius: 50px;
-    
     padding: 0 10px 0 10px;
     width: 60%;
     

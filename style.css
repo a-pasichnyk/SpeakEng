@@ -651,6 +651,10 @@ footer{
     width: 100%;
 }
 
+.bgImageMobile{
+    display: none;
+}
+
 }
 
 
@@ -667,6 +671,14 @@ footer{
 
 .bgImage{
 display: none;
+}
+
+.bgImageMobile{
+    z-index: -1;
+    opacity: 50%;
+    position: fixed;
+    top: 50px;
+    width: 100%;
 }
 
 .bannerInfo{
@@ -1076,9 +1088,19 @@ footer{
 
 @media (max-width: 700px){
 
-.bgImage{
-display: none;
+
+.bgImageMobile{
+    z-index: -1;
+    opacity: 50%;
+    position: fixed;
+    top: 50px;
+    width: 100%;
 }
+
+.bgImage{
+    display: none;
+}
+
 
 .bannerInfo{
     font-size: 14px;

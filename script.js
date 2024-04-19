@@ -19,7 +19,7 @@ dropBtn.addEventListener("click", dropDown);
 
 
 
-
+/*
 function adjustingNavbar () {
         const content = document.getElementById("navMenu");
         const screenWidth = window.innerWidth;
@@ -56,7 +56,7 @@ function adjustingNavbar () {
         }
 }
 window.addEventListener('resize', adjustingNavbar);
-
+*/
 
 
 //COOKIES
